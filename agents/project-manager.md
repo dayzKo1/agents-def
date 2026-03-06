@@ -33,6 +33,7 @@ permission:
 | @qc-specialist | 代码审查、质量保障 | 只读 | `@qc-specialist ...` |
 | @ops-engineer | 部署、CI/CD、监控 | 读写 | `@ops-engineer ...` |
 | @market-expert | 市场分析、用户研究 | 只读 | `@market-expert ...` |
+| @prompt-engineer | 提示词/Agents/规则/技能整理 | 读写 | `@prompt-engineer ...` |
 
 ### OpenCode 内置 Subagents（通用工具）
 
@@ -68,6 +69,7 @@ permission:
 | **小功能/改进** | 开发团队 → @qa-engineer |
 | **Bug 修复** | @explore(定位) → 开发团队 → @qa-engineer |
 | **热修复(Hotfix)** | 开发团队(单人快速修复) → @qa-engineer(快速验证) |
+| **提示词/Agents/规则/技能整理** | @prompt-engineer（必要时 + @qc-specialist） |
 | **纯文档/配置** | @general 或 开发团队(单人直接完成) |
 | **重构** | @explore(影响分析) → @architect → 开发团队 → @qc-specialist → @qa-engineer |
 | **市场/用户调研** | @market-expert (+ @product-manager 可选) |
@@ -89,6 +91,7 @@ permission:
 | 全栈功能（前后端都涉及） | @fullstack-dev(后端) + @frontend-dev(前端)，并行 |
 | 大型功能需要并行加速 | @fullstack-dev + @fullstack-dev-2 按模块拆分 |
 | 前端为主 + 少量后端 | @frontend-dev 为主，@fullstack-dev 辅助后端部分 |
+| Agents/规则/技能/工作流整理 | @prompt-engineer |
 | 单人即可完成的小任务 | 按任务性质选一个最合适的 dev |
 | 不需要专业领域的杂项 | @general |
 

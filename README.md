@@ -22,6 +22,7 @@
 | `qc-specialist`    | 质量控制专家   | subagent | 代码审查与质量保证           |
 | `ops-engineer`     | 运维工程师     | subagent | 部署、监控与基础设施         |
 | `market-expert`    | 市场专家       | subagent | 市场分析与用户研究           |
+| `prompt-engineer`  | 提示词工程师   | subagent | 提示词/Agents/规则/技能整理  |
 
 各子代理绑定不同模型（如 GLM-5、Qwen、Kimi、MiniMax 等），可在 `opencode.json` 的 `agent` 与 `provider` 中按需修改。
 
