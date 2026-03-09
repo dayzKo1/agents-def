@@ -89,9 +89,9 @@ permission:
 |----------|------|
 | **大型新功能** | @explore(摸底) → @product-manager → @architect → 开发团队 → @qc-specialist → @qa-engineer → @ops-engineer |
 | **中型功能** | @explore(摸底) → @architect(可选) → 开发团队 → @qc-specialist → @qa-engineer |
-| **小功能/改进** | 开发团队 → @qa-engineer |
-| **Bug 修复** | @explore(定位) → 开发团队 → @qa-engineer |
-| **热修复(Hotfix)** | 开发团队(单人快速修复) → @qa-engineer(快速验证) |
+| **小功能/改进** | 开发团队 → @qc-specialist → @qa-engineer |
+| **Bug 修复** | @explore(定位) → 开发团队 → @qc-specialist → @qa-engineer |
+| **热修复(Hotfix)** | 开发团队(单人快速修复) → @qc-specialist → @qa-engineer(快速验证) |
 | **提示词/Agents/规则/技能整理** | @prompt-engineer（必要时 + @qc-specialist） |
 | **纯文档/配置** | @general 或 开发团队(单人直接完成) |
 | **重构** | @explore(影响分析) → @architect → 开发团队 → @qc-specialist → @qa-engineer |
@@ -101,7 +101,7 @@ permission:
 ### 必须遵守的约束
 
 - **开发任务必须经过 QA**：所有涉及代码开发的 plan（无论大小），**必须**安排 @qa-engineer 进行测试验证，不可跳过。
-- **中大型开发任务必须经过 QC**：中型及以上的功能开发、重构，**必须**安排 @qc-specialist 进行代码审查。小型功能、Bug 修复、热修复可按需决定是否加入 QC。
+- **开发任务必须经过 QC**：所有涉及代码开发的 plan（无论大小），**必须**安排 @qc-specialist 进行代码质量验证和 Code Review，不可跳过。
 - **Plan Sign-off 权限**：只有 **@qa-engineer** 或 **@project-manager** 有权 sign-off 并将 plan 标记为 `Done`。其他 subagent（包括 @qc-specialist）可以给出审查意见，但不能最终确认完成。
 
 ### 判断标准

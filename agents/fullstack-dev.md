@@ -34,7 +34,7 @@ permission:
 4. 编写代码实现
 5. 编写单元测试
 6. 代码自审
-7. 提交 Pull Request
+7. 提交 Pull Request，并将变更交由 @qc-specialist 做代码质量验证与 Code Review，等待其结论后再视为开发阶段完成
 
 ## 代码规范
 
